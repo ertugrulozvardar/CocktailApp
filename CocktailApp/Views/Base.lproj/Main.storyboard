@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1jA-gZ-eG8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Category View Controller-->
+        <scene sceneID="Qoc-yw-hbf">
+            <objects>
+                <viewController storyboardIdentifier="CategoryViewController" id="sCm-fI-Npb" customClass="CategoryViewController" customModule="CocktailApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zbv-ad-dmq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="8Ts-3s-n2h">
+                                <rect key="frame" x="107" y="190" width="200" height="250"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9n-Jc-KnR">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
+                                        <color key="backgroundColor" red="0.48144632580000002" green="0.60238546130000004" blue="0.26053750510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="gne-3K-Gzn"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="wIG-Kp-qkP"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Alcoholic">
+                                            <fontDescription key="titleFontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="22"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="categoryButtonPressed:" destination="sCm-fI-Npb" eventType="touchUpInside" id="iuu-6C-vjx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muF-5C-XvZ">
+                                        <rect key="frame" x="0.0" y="72" width="200" height="38"/>
+                                        <color key="backgroundColor" red="0.7247582078" green="0.3884552121" blue="0.1610828936" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Non_Alcoholic">
+                                            <fontDescription key="titleFontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="22"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="categoryButtonPressed:" destination="sCm-fI-Npb" eventType="touchUpInside" id="Dd4-gs-Lpp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7y-rP-j7l">
+                                        <rect key="frame" x="0.0" y="142" width="200" height="38"/>
+                                        <color key="backgroundColor" red="0.2489391863" green="0.3709196448" blue="0.56139814850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Ordinary_Drink">
+                                            <fontDescription key="titleFontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="22"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="categoryButtonPressed:" destination="sCm-fI-Npb" eventType="touchUpInside" id="ppT-Ua-SqN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bek-d9-jxu">
+                                        <rect key="frame" x="0.0" y="212" width="200" height="38"/>
+                                        <color key="backgroundColor" red="0.77575731280000004" green="0.53279525039999998" blue="0.51107251639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Cocktail">
+                                            <fontDescription key="titleFontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="22"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="categoryButtonPressed:" destination="sCm-fI-Npb" eventType="touchUpInside" id="dSJ-oB-U6F"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="3wt-QS-ESd"/>
+                                    <constraint firstItem="s9n-Jc-KnR" firstAttribute="top" secondItem="8Ts-3s-n2h" secondAttribute="top" id="Bn5-wx-vjv"/>
+                                    <constraint firstItem="t7y-rP-j7l" firstAttribute="top" secondItem="muF-5C-XvZ" secondAttribute="bottom" constant="32" id="F0X-Ih-4eZ"/>
+                                    <constraint firstItem="t7y-rP-j7l" firstAttribute="width" secondItem="muF-5C-XvZ" secondAttribute="width" id="KwP-7I-3fu"/>
+                                    <constraint firstItem="muF-5C-XvZ" firstAttribute="height" secondItem="s9n-Jc-KnR" secondAttribute="height" multiplier="0.95" id="MfS-XE-CC8"/>
+                                    <constraint firstItem="muF-5C-XvZ" firstAttribute="centerX" secondItem="s9n-Jc-KnR" secondAttribute="centerX" id="O9G-oA-dWs"/>
+                                    <constraint firstItem="s9n-Jc-KnR" firstAttribute="leading" secondItem="8Ts-3s-n2h" secondAttribute="leading" id="Wah-zS-DtJ"/>
+                                    <constraint firstItem="muF-5C-XvZ" firstAttribute="width" secondItem="s9n-Jc-KnR" secondAttribute="width" id="YSo-cz-yur"/>
+                                    <constraint firstItem="t7y-rP-j7l" firstAttribute="centerX" secondItem="muF-5C-XvZ" secondAttribute="centerX" id="YdY-LV-Cga"/>
+                                    <constraint firstItem="muF-5C-XvZ" firstAttribute="top" secondItem="s9n-Jc-KnR" secondAttribute="bottom" constant="32" id="Ys9-It-vIL"/>
+                                    <constraint firstItem="bek-d9-jxu" firstAttribute="height" secondItem="t7y-rP-j7l" secondAttribute="height" id="hCg-CK-3Vl"/>
+                                    <constraint firstItem="bek-d9-jxu" firstAttribute="top" secondItem="t7y-rP-j7l" secondAttribute="bottom" constant="32" id="jsg-V2-H9M"/>
+                                    <constraint firstItem="bek-d9-jxu" firstAttribute="centerX" secondItem="t7y-rP-j7l" secondAttribute="centerX" id="nQI-UP-iuV"/>
+                                    <constraint firstItem="bek-d9-jxu" firstAttribute="width" secondItem="t7y-rP-j7l" secondAttribute="width" id="uF3-eq-PEq"/>
+                                    <constraint firstAttribute="trailing" secondItem="s9n-Jc-KnR" secondAttribute="trailing" id="wBI-Ob-AI5"/>
+                                    <constraint firstItem="t7y-rP-j7l" firstAttribute="height" secondItem="muF-5C-XvZ" secondAttribute="height" id="xad-e3-h0Q"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="yHu-Zp-4Vn"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cocktail2.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="bvx-OU-5zv">
+                                <rect key="frame" x="0.0" y="520" width="414" height="342"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="800" constant="200" id="rea-kj-Zsm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRs-QC-uRG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.7784743905" green="0.56925785539999996" blue="0.40449473260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="KXQ-ir-gZ5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="24"/>
+                                <color key="textColor" red="0.13883155580000001" green="0.01202158909" blue="0.1248910204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="m0s-Tb-J5T"/>
+                        <color key="backgroundColor" red="0.038698088380000002" green="0.040737025439999998" blue="0.08631911129" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bvx-OU-5zv" firstAttribute="bottom" secondItem="m0s-Tb-J5T" secondAttribute="bottom" id="2Oa-Zq-G2G"/>
+                            <constraint firstItem="bvx-OU-5zv" firstAttribute="top" relation="lessThanOrEqual" secondItem="8Ts-3s-n2h" secondAttribute="bottom" priority="900" constant="80" id="7Lc-ia-JHr"/>
+                            <constraint firstItem="bvx-OU-5zv" firstAttribute="trailing" secondItem="m0s-Tb-J5T" secondAttribute="trailing" id="DOG-G9-2Qi"/>
+                            <constraint firstItem="8Ts-3s-n2h" firstAttribute="top" secondItem="pRs-QC-uRG" secondAttribute="bottom" constant="52" id="HkV-Mz-e13"/>
+                            <constraint firstItem="pRs-QC-uRG" firstAttribute="top" secondItem="m0s-Tb-J5T" secondAttribute="top" id="Llx-h7-dn4"/>
+                            <constraint firstItem="pRs-QC-uRG" firstAttribute="leading" secondItem="m0s-Tb-J5T" secondAttribute="leading" id="O5g-f2-ZWu"/>
+                            <constraint firstItem="8Ts-3s-n2h" firstAttribute="centerX" secondItem="zbv-ad-dmq" secondAttribute="centerX" id="XCr-rQ-Vqc"/>
+                            <constraint firstItem="bvx-OU-5zv" firstAttribute="leading" secondItem="m0s-Tb-J5T" secondAttribute="leading" id="Z3L-Iw-ChJ"/>
+                            <constraint firstItem="pRs-QC-uRG" firstAttribute="trailing" secondItem="m0s-Tb-J5T" secondAttribute="trailing" id="lhl-eX-Q8P"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="upE-A5-RZE"/>
+                    <connections>
+                        <outlet property="categoryAlcoholic" destination="s9n-Jc-KnR" id="gtK-Lt-9qJ"/>
+                        <outlet property="categoryCocktail" destination="bek-d9-jxu" id="SKZ-gp-DWa"/>
+                        <outlet property="categoryNonAlcoholic" destination="muF-5C-XvZ" id="kXF-j5-vbA"/>
+                        <outlet property="categoryOrdinaryDrink" destination="t7y-rP-j7l" id="rmH-cv-mgx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OiY-de-qbo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1346.376811594203" y="94.419642857142847"/>
+        </scene>
+        <!--Drink List View Controller-->
+        <scene sceneID="Ow4-YN-eUg">
+            <objects>
+                <viewController storyboardIdentifier="DrinkListViewController" id="oGa-h1-qvJ" customClass="DrinkListViewController" customModule="CocktailApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mzw-6T-osT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="130" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="OTA-rO-kMO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" red="0.1221851185" green="0.1107615158" blue="0.14505526420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="1" green="0.6181320548" blue="0.29485455160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oaE-Mz-467"/>
+                        <color key="backgroundColor" red="0.99932092429999997" green="0.6181320548" blue="0.29485455160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="OTA-rO-kMO" secondAttribute="bottom" id="LtP-WI-lS0"/>
+                            <constraint firstItem="oaE-Mz-467" firstAttribute="trailing" secondItem="OTA-rO-kMO" secondAttribute="trailing" id="VOA-qN-6gx"/>
+                            <constraint firstItem="OTA-rO-kMO" firstAttribute="leading" secondItem="oaE-Mz-467" secondAttribute="leading" id="Vft-e5-EdH"/>
+                            <constraint firstItem="OTA-rO-kMO" firstAttribute="top" secondItem="oaE-Mz-467" secondAttribute="top" id="tP0-DB-1mR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="h93-Hf-YIF"/>
+                    <connections>
+                        <outlet property="tableView" destination="OTA-rO-kMO" id="dQg-cK-6f4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kh2-Qx-L2u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2187" y="94"/>
+        </scene>
+        <!--Drink Detail View Controller-->
+        <scene sceneID="Hhf-3y-fUh">
+            <objects>
+                <viewController storyboardIdentifier="DrinkDetailViewController" id="4FM-O7-7NC" customClass="DrinkDetailViewController" customModule="CocktailApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pll-np-vqZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hmz-o8-i87">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJs-dP-VtR">
+                                        <rect key="frame" x="0.0" y="89" width="414" height="973.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dLI-7M-uga">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="dLI-7M-uga" secondAttribute="height" multiplier="1:1" id="E2f-Lg-GDK"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uNx-p3-8MC">
+                                                <rect key="frame" x="16" y="430" width="382" height="527.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVq-SU-pOq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="74.5"/>
+                                                        <color key="backgroundColor" red="0.44749593729999998" green="0.6004536748" blue="0.75383216139999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <string key="text">Shake well before drinking..Shake well before drinking..Shake well before drinking..Shake well before drinking..Shake well before drinking..</string>
+                                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-BookIta" family="Bodoni 72" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients List" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHi-IL-o57">
+                                                        <rect key="frame" x="0.0" y="84.5" width="382" height="23"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="les-6x-a14">
+                                                        <rect key="frame" x="0.0" y="117.5" width="382" height="18"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exi-r5-Zib">
+                                                        <rect key="frame" x="0.0" y="145.5" width="382" height="18"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8e-md-AWc">
+                                                        <rect key="frame" x="0.0" y="173.5" width="382" height="18"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dF-hX-jw4">
+                                                        <rect key="frame" x="0.0" y="201.5" width="382" height="18"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlO-3f-YBS">
+                                                        <rect key="frame" x="0.0" y="229.5" width="382" height="18"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SyX-pA-cWI">
+                                                        <rect key="frame" x="0.0" y="257.5" width="382" height="18"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHV-U1-UKi">
+                                                        <rect key="frame" x="0.0" y="285.5" width="382" height="18"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2n-WB-T0t">
+                                                        <rect key="frame" x="0.0" y="313.5" width="382" height="18"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKQ-Rk-As1">
+                                                        <rect key="frame" x="0.0" y="341.5" width="382" height="18"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lk1-Zj-3Zn">
+                                                        <rect key="frame" x="0.0" y="369.5" width="382" height="18"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJu-EZ-DkH">
+                                                        <rect key="frame" x="0.0" y="397.5" width="382" height="18"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dU-3T-5Qr">
+                                                        <rect key="frame" x="0.0" y="425.5" width="382" height="18"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8P0-im-mjl">
+                                                        <rect key="frame" x="0.0" y="453.5" width="382" height="18"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eik-0j-5o4">
+                                                        <rect key="frame" x="0.0" y="481.5" width="382" height="18"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Go-Oy-fxR">
+                                                        <rect key="frame" x="0.0" y="509.5" width="382" height="18"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.81189471479999997" green="0.47700089220000003" blue="0.01029498968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.58567869660000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="uNx-p3-8MC" secondAttribute="bottom" constant="16" id="7Nj-gM-VWE"/>
+                                            <constraint firstAttribute="trailing" secondItem="uNx-p3-8MC" secondAttribute="trailing" constant="16" id="7kV-Oi-avE"/>
+                                            <constraint firstItem="uNx-p3-8MC" firstAttribute="top" secondItem="dLI-7M-uga" secondAttribute="bottom" constant="16" id="LVe-kh-FBb"/>
+                                            <constraint firstAttribute="trailing" secondItem="dLI-7M-uga" secondAttribute="trailing" id="SNN-A5-sVK"/>
+                                            <constraint firstItem="dLI-7M-uga" firstAttribute="leading" secondItem="gJs-dP-VtR" secondAttribute="leading" id="TCz-i9-eXK"/>
+                                            <constraint firstItem="dLI-7M-uga" firstAttribute="top" secondItem="gJs-dP-VtR" secondAttribute="top" id="i8n-4u-evQ"/>
+                                            <constraint firstItem="uNx-p3-8MC" firstAttribute="leading" secondItem="gJs-dP-VtR" secondAttribute="leading" constant="16" id="mb0-EF-EDa"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="gJs-dP-VtR" secondAttribute="bottom" id="5E0-EC-Wu2"/>
+                                    <constraint firstItem="gJs-dP-VtR" firstAttribute="top" secondItem="Hmz-o8-i87" secondAttribute="top" constant="89" id="6Cl-31-J0z"/>
+                                    <constraint firstItem="gJs-dP-VtR" firstAttribute="leading" secondItem="Hmz-o8-i87" secondAttribute="leading" id="ZIQ-Pc-SbQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="gJs-dP-VtR" secondAttribute="trailing" id="ibL-2r-mxz"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Martini" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9n-FW-Z7h">
+                                <rect key="frame" x="0.0" y="44" width="414" height="90"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="LHf-xx-ROj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ANP-IG-dCQ"/>
+                        <color key="backgroundColor" red="1" green="0.58567869660000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="d9n-FW-Z7h" firstAttribute="trailing" secondItem="ANP-IG-dCQ" secondAttribute="trailing" id="1cB-DX-bZJ"/>
+                            <constraint firstItem="d9n-FW-Z7h" firstAttribute="top" secondItem="ANP-IG-dCQ" secondAttribute="top" id="24w-ep-qHa"/>
+                            <constraint firstItem="Hmz-o8-i87" firstAttribute="leading" secondItem="ANP-IG-dCQ" secondAttribute="leading" id="8Uq-9U-ma7"/>
+                            <constraint firstItem="Hmz-o8-i87" firstAttribute="top" secondItem="ANP-IG-dCQ" secondAttribute="top" id="BYg-Cb-btH"/>
+                            <constraint firstItem="gJs-dP-VtR" firstAttribute="width" secondItem="pll-np-vqZ" secondAttribute="width" id="EhB-B9-KPv"/>
+                            <constraint firstItem="d9n-FW-Z7h" firstAttribute="leading" secondItem="ANP-IG-dCQ" secondAttribute="leading" id="J3Q-TZ-fFu"/>
+                            <constraint firstItem="ANP-IG-dCQ" firstAttribute="trailing" secondItem="Hmz-o8-i87" secondAttribute="trailing" id="Qe9-E7-85Y"/>
+                            <constraint firstAttribute="bottom" secondItem="Hmz-o8-i87" secondAttribute="bottom" id="Qm7-0X-ZIQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="drinkImageView" destination="dLI-7M-uga" id="MaC-aM-4q5"/>
+                        <outlet property="drinkNameLabel" destination="d9n-FW-Z7h" id="42X-9F-rHE"/>
+                        <outlet property="ingredientEightLabel" destination="d2n-WB-T0t" id="JcP-qq-b6e"/>
+                        <outlet property="ingredientElevenLabel" destination="uJu-EZ-DkH" id="gR4-tP-dUh"/>
+                        <outlet property="ingredientFifteenLabel" destination="3Go-Oy-fxR" id="ao3-W0-5Qc"/>
+                        <outlet property="ingredientFiveLabel" destination="KlO-3f-YBS" id="77a-HD-6XD"/>
+                        <outlet property="ingredientFourLabel" destination="9dF-hX-jw4" id="1ky-yM-JIg"/>
+                        <outlet property="ingredientFourteenLabel" destination="eik-0j-5o4" id="c5J-gQ-Dch"/>
+                        <outlet property="ingredientNineLabel" destination="dKQ-Rk-As1" id="vcU-S8-Eky"/>
+                        <outlet property="ingredientOneLabel" destination="les-6x-a14" id="QrQ-u6-lhh"/>
+                        <outlet property="ingredientSevenLabel" destination="jHV-U1-UKi" id="2Lz-Gq-NUi"/>
+                        <outlet property="ingredientSixLabel" destination="SyX-pA-cWI" id="7yF-WQ-05A"/>
+                        <outlet property="ingredientTenLabel" destination="lk1-Zj-3Zn" id="Yp3-AE-fy1"/>
+                        <outlet property="ingredientThirteenLabel" destination="8P0-im-mjl" id="SjP-bk-4Cm"/>
+                        <outlet property="ingredientThreeLabel" destination="O8e-md-AWc" id="c3v-r3-CYb"/>
+                        <outlet property="ingredientTwelveLabel" destination="8dU-3T-5Qr" id="Btk-qA-ydC"/>
+                        <outlet property="ingredientTwoLabel" destination="exi-r5-Zib" id="xAj-y1-Oue"/>
+                        <outlet property="tipLabel" destination="yVq-SU-pOq" id="pW3-dQ-Ds5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xbo-Z3-dgQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2952.1739130434785" y="94.419642857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5wr-yr-uCc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1jA-gZ-eG8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EoX-pL-Kxz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sCm-fI-Npb" kind="relationship" relationship="rootViewController" id="jho-7p-0Wa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nbk-3f-cXJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="436.23188405797106" y="94.419642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cocktail2.jpeg" width="275" height="183"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
