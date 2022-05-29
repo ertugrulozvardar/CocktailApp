@@ -6,3 +6,5 @@
 - Cocktail informations are gathered from "TheCocktailDB API" : https://thecocktaildb.com/api.php
 - Languages: Swift
 - Additional libraries: Kingfisher [For converting URL Strings to Images]
+
+![CocktailApp](readmeGIF.gif)
